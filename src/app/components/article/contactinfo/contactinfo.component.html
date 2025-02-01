@@ -1,0 +1,41 @@
+<div class="container">
+    <h3>INFORMACIÓN DEL CONTACTO</h3>
+
+    <div class="text-center">
+
+        <div>
+            <p><strong>Dirección</strong></p>
+            <p>{{ (contactInfo$ | async)?.address }}</p>
+        </div>
+        <div>
+            <p><strong>Correo electrónico</strong></p>
+            <p>{{ (contactInfo$| async)?.mail }}</p>
+        </div>
+        <div>
+            <p><strong>Sitio Web</strong></p>
+            <p>{{ (contactInfo$| async)?.website }}</p>
+        </div>
+        <div>
+            <p><strong>Red social</strong></p>
+            @for (item of (contactInfo$ | async)?.socialMedia; track item){
+                <p>{{item}}</p>
+            }
+            </div> 
+        <div>
+            <p><strong>Dirección de correspondencia de correo</strong></p>
+            <p>{{ (contactInfo$| async)?.correspondenceAddress }}</p>
+        </div>
+    
+        <div>
+            <p><strong>Número de teléfonos</strong></p>
+            @for (item of (contactInfo$ | async)?.phones; track item){
+                <p>{{item.name}}</p>
+                <p>{{item.number}}</p>
+
+            }
+
+
+        </div>
+    </div>
+
+</div>

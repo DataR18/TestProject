@@ -1,0 +1,21 @@
+{
+    "id": 1,
+    "address": "Carrera 52 # 91-66 Medellín Colombia",
+    "mail": "usuarioapellido@gmail.com",
+    "website": "http://www.usuarioapellido.com/",
+    "socialMedia": [
+        "http://www.linkeind.com/usuarioapellido",
+        "www.instagram.com/usuarioapellido"
+    ],
+    "phones": [
+        {
+            "name": "Fijo",
+            "number": "+57 (4) 313-70-00"
+        }, {
+            "name": "Celular", 
+            "number" : "(312) 313-44-77"
+
+        }
+    ],
+    "correspondenceAddress": "Carrera 52 # 91-66 Envigado Colombia"
+}

@@ -1,0 +1,22 @@
+<div class="container">
+
+    <div class="gallery">
+    
+        @for (item of (articles$ | async); track $index) {
+
+            <div class="pw-2 py-2">
+                <div class="text-center">
+                    <img [src]="item.imagen">
+
+                </div>
+                <p class="text-center my-1">{{item.titulo}}</p>
+                <p class="small">{{item.descripcion}}</p>
+            </div>
+
+        }
+    
+    </div>
+
+</div>
+    
+    
